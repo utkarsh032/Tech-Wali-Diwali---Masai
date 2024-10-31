@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
+  <title>Diwali Celebrations</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="user-profile">
+      <h1>Tech Wali Diwali - Masai </h1>
+    </div>
+    <div class="nav-links">
+      <a target="_blank" href="https://www.youtube.com/@utkarshraz9900">Youtube</a>
+      <a target="_blank" href="https://www.linkedin.com/in/utkarsh-raj032/">LinkediN</a>
+      <a target="https://x.com/UTKARSHRAZ1" href="#contact">Twitter</a>
+      <a download="pdf" href="utk.pdf">Hire me</a>
+    </div>
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Editor -->
+  <div class="editor-inputs">
+    <div class="editoral">
+      <div class="image-board" id="imageBoard">
+        <div id="textOverlay" class="text-overlay"></div>
+      </div>
+
+      <div class="editoral_tool">
+        <input type="color" id="bgColor" value="#ffdd57" title="Background Color">
+
+        <label for="fontSelect">Font Style:</label>
+        <select id="fontSelect">
+          <option value="Arial">Arial</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize">
+          <option value="12px">12px</option>
+          <option value="14px">14px</option>
+          <option value="16px">16px</option>
+          <option value="18px">18px</option>
+          <option value="20px">20px</option>
+          <option value="24px">24px</option>
+          <option value="28px">28px</option>
+          <option value="32px">32px</option>
+          <option value="36px">36px</option>
+          <option value="40px">40px</option>
+        </select>
+
+        <input type="color" id="fontColor" value="#000000" title="Font Color">
+        <input type="text" id="textInput" placeholder="Type your text here">
+
+        <button id="emojiPickerBtn" title="Add Emoji">😊</button>
+        <emoji-picker id="emojiPicker" style="display: none;"></emoji-picker>
+
+
+        <label for="uploadImage" class="upload-label">
+          <i class="fa-solid fa-upload"></i> Upload Image
+          <input type="file" id="uploadImage" accept="image/*" style="display: none;">
+        </label>
+
+
+        <button id="downloadBtn" title="Download"><i class="fa-solid fa-download"></i></button>
+        <button id="undoBtn" title="Undo">Undo</button>
+        <button id="redoBtn" title="Redo">Redo</button>
+        <button id="resetBtn" title="Reset">Reset</button>
+      </div>
+
+
+
+    </div>
+
+    <div class="gallery">
+      <img src="diwali1.png" alt="Image 1" class="gallery-image">
+      <img src="diwali2.png" alt="Image 2" class="gallery-image">
+      <img src="diwali3.png" alt="Image 3" class="gallery-image">
+      <img src="diwali4.jpg" alt="Image 4" class="gallery-image">
+      <img src="diwali1.png" alt="Image 5" class="gallery-image">
+      <img src="diwali2.png" alt="Image 6" class="gallery-image">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    @masai Wali Diwali - Developer @utkarshraz
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

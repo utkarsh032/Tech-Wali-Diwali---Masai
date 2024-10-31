@@ -1,0 +1,47 @@
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+  .editor-inputs {
+    flex-direction: column;
+  }
+
+  .image-board {
+    height: 40vh;
+  }
+
+  .editoral_tool {
+    flex-wrap: wrap;
+    line-height: 2;
+  }
+
+  .gallery {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .editor-inputs {
+    flex-direction: column;
+  }
+
+  .image-board {
+    height: 40vh;
+  }
+
+  .editoral_tool {
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
